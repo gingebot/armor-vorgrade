@@ -18,26 +18,26 @@ Calling the script from a shell outputs the following detail:
 
 If there is a new agent available:
 
-*Current agent version
-*New Agent Version
-*Hostname
-*IP address(es)
-*Operating system
-*Current running kernel
-*Latest available kernel
-*Compatibility check for new agent with running kernel and latest available kernel
-*A list of all compatible kernels with new agent
-*A short message telling the customer they can contact Armor support to arrange an agent/kernel upgrade
+* Current agent version
+* New Agent Version
+* Hostname
+* IP address(es)
+* Operating system
+* Current running kernel
+* Latest available kernel
+* Compatibility check for new agent with running kernel and latest available kernel
+* A list of all compatible kernels with new agent
+* A short message telling the customer they can contact Armor support to arrange an agent/kernel upgrade
 
 
 
 If there is NOT a new agent available:
 
-*A short message saying the check is complete and no agent is available.
-*Hostname
+* A short message saying the check is complete and no agent is available.
+* Hostname
 
-###Example output
-````
+### Example output
+```
 [root@centosvormetric ~]# ./vorgrade.sh
  
 New Vormetric agent available
@@ -168,11 +168,11 @@ Suggested use
 --------------
 The suggested use is to create a daily/weekly/monthly (depending on you requirements) task that executes the script to perform the check and emails the script output.
 
-###Prerequisites
+### Prerequisites
 The "mail" utility must be installed and working on the server.
 server must either have a configured mail relay or outbound port 25 access
 
-###Configuration walkthrough
+### Configuration walkthrough
 First add the script and confirm script is working by executing it.
 ```
 [root@centosvormetric ~]# /opt/vorgrade/vorgrade.sh
